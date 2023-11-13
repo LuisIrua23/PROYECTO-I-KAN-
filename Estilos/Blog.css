@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+html{
+    font-family:  sans-serif;
+}
+body{
+    margin: 0%;
+    box-sizing: border-box;
+/* background:rgb(19, 7, 30);*/
+background:rgb(0, 59, 82);
+
+}
+.logo img{
+    position: fixed;
+    height: 100px;
+}
+/* =================================   barra de menu ================================*/
+.lineanegra{
+    background: linear-gradient(black,rgb(0, 59, 82));
+    width: 100%;
+    height: 60px;
+}
+
+header{
+    z-index: 1;      /* menu en primera plana*/
+    position: fixed; /*menu en posicion fija*/
+    width: 100%;     /*  en esta parte pone la barra de menu primera plana en header*/
+}
+
+header .container .nav {
+    
+    margin-top: 10px;
+    justify-content:space-between;
+    width: 100%;
+    background:rgba(65, 65, 65, 0)
+    ;
+    backdrop-filter: blur(20px);
+}
+
+
+header .container .nav ul li img{               /* logo en la barra de menu*/
+    
+    padding-top: 3px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 60px ;              /*tamaño logo barra de menu*/
+    margin: 0% ;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40%;
+}
+
+
+.nav a{
+    margin-left: 10px;               /*espacio entre cada hipervinculo*/
+    margin-right: 10px;                 /*espacio entre cada hipervinculo*/
+}
+
+    
+.nav-list2 li a{
+    margin-right: 10px;             /*esta parte para correr "iniciar seesion" a la izquierda*/
+
+}
+.nav{
+    /*margin-top:  5px;             margen del menu
+    margin-bottom: 3%;
+    margin-right: 20%;*/
+    height: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content:space-between;
+    /*align-items:start;*/
+    
+    background-color: rgba(15, 3, 66, 0.164);
+    /*backdrop-filter: blur(70px)  ;*/
+}
+
+input{
+    height: 25px;
+    width: 250px;
+    border-spacing: 80px;
+    border-color: rgba(6, 245, 26, 0.945);
+    border-radius: 40px  ;
+}
+
+.nav-link{
+    padding: 0px;
+    
+    text-decoration: none;
+    border-radius: 10px;
+    
+}
+
+header .container .nav ul li{
+    font-size: 20px;
+    margin: 0%;
+    padding: 0px;
+    
+    
+}
+
+.nav-list{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    align-items: center; /*centrar la lista vertical del menu*/
+
+    
+}
+.nav-list2{
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    text-align: initial;
+    margin: 0%;
+    padding: 0%;
+    
+    
+
+
+    
+    
+}
+
+
+ul{
+    
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+    margin: 0%;      
+    
+}
+
+li{
+    padding: 0%;
+    text-decoration: none;
+    
+    
+    
+    
+}
+a{
+    color:rgba(255, 255, 255, 0.692);
+    text-decoration: none;
+    font-size: 30px;
+    
+    
+}
+li a:hover{
+    color: rgb(255, 255, 255);
+    /*background-color: rgba(15, 3, 66, 0.055);*/
+}
+ul li {
+    text-decoration: none;
+    list-style:none;/*quitar punto de la lista*/
+}
+
+
+
+video {
+    width: 1355px; /* ajusta el ancho según tus necesidades */
+    height: 587px; /* ajusta la altura según tus necesidades */
+    margin: 50px auto; /* centra el video en la página */
+    
+}
+h1{
+text-align: center;
+}
