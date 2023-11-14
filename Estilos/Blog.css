@@ -1,169 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
-
-html{
-    font-family:  sans-serif;
-}
-body{
-    margin: 0%;
+* {
     box-sizing: border-box;
-/* background:rgb(19, 7, 30);*/
-background:rgb(0, 59, 82);
-
-}
-.logo img{
-    position: fixed;
-    height: 100px;
-}
-/* =================================   barra de menu ================================*/
-.lineanegra{
-    background: linear-gradient(black,rgb(0, 59, 82));
-    width: 100%;
-    height: 60px;
-}
-
-header{
-    z-index: 1;      /* menu en primera plana*/
-    position: fixed; /*menu en posicion fija*/
-    width: 100%;     /*  en esta parte pone la barra de menu primera plana en header*/
-}
-
-header .container .nav {
-    
-    margin-top: 10px;
-    justify-content:space-between;
-    width: 100%;
-    background:rgba(65, 65, 65, 0)
-    ;
-    backdrop-filter: blur(20px);
-}
-
-
-header .container .nav ul li img{               /* logo en la barra de menu*/
-    
-    padding-top: 3px;
-    padding-left: 0px;
-    padding-right: 0px;
-    height: 60px ;              /*tamaño logo barra de menu*/
-    margin: 0% ;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 40%;
-}
-
-
-.nav a{
-    margin-left: 10px;               /*espacio entre cada hipervinculo*/
-    margin-right: 10px;                 /*espacio entre cada hipervinculo*/
-}
-
-    
-.nav-list2 li a{
-    margin-right: 10px;             /*esta parte para correr "iniciar seesion" a la izquierda*/
-
-}
-.nav{
-    /*margin-top:  5px;             margen del menu
-    margin-bottom: 3%;
-    margin-right: 20%;*/
-    height: 0%;
-    padding: 0%;
-    display: flex;
-    justify-content:space-between;
-    /*align-items:start;*/
-    
-    background-color: rgba(15, 3, 66, 0.164);
-    /*backdrop-filter: blur(70px)  ;*/
-}
-
-input{
-    height: 25px;
-    width: 250px;
-    border-spacing: 80px;
-    border-color: rgba(6, 245, 26, 0.945);
-    border-radius: 40px  ;
-}
-
-.nav-link{
-    padding: 0px;
-    
-    text-decoration: none;
-    border-radius: 10px;
-    
-}
-
-header .container .nav ul li{
+    margin: 4px;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
-    margin: 0%;
-    padding: 0px;
-    
-    
 }
 
-.nav-list{
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    align-items: center; /*centrar la lista vertical del menu*/
-
-    
+body {
+    background-image: url(/img/Recurso\ 1.png);
+    background-color: rgb(57, 69, 69);
 }
-.nav-list2{
-    list-style: none;
+
+.header {
+    
+    
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: end;
-    text-align: initial;
-    margin: 0%;
-    padding: 0%;
-    
-    
-
-
-    
+    height: 85px;
+    padding: 5px 10%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    backdrop-filter: blur(40px);
+    position: fixed;
+    z-index: 1;
+    width: 98%;
     
 }
 
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
 
-ul{
-    
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+}
+
+
+
+.header .nav-links li a:hover {
+    color: #000000;
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.header .btn {
+    order: 2;
+}
+
+.header .btn button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    transform: scale(1.1);
+
+}
+
+
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
-    text-decoration: none;
-
-    margin: 0%;      
     
 }
 
-li{
-    padding: 0%;
-    text-decoration: none;
-    
-    
-    
-    
+.nav-links li {
+    margin: 0 15px;
 }
-a{
-    color:rgba(255, 255, 255, 0.692);
+
+.nav-links a {
+    position: relative;
+    color: #333;
     text-decoration: none;
-    font-size: 30px;
-    
-    
+    transition: color 0.3s ease;
 }
-li a:hover{
-    color: rgb(255, 255, 255);
-    /*background-color: rgba(15, 3, 66, 0.055);*/
+
+/* Línea horizontal debajo del enlace al pasar el mouse */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
 }
-ul li {
+
+/* Efecto de expansión de la línea al pasar el mouse */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn {
     text-decoration: none;
-    list-style:none;/*quitar punto de la lista*/
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+label {
+    color: #fff;
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#search-container {
+    text-align: right;
+    margin-top: -5px;
+    margin-right: 10px;
+    
 }
 
 
 
 video {
-    width: 1353px; /* ajusta el ancho según tus necesidades */
+    width: 1350px; /* ajusta el ancho según tus necesidades */
     height: 647px; /* ajusta la altura según tus necesidades */
-    margin: 30px auto; /* centra el video en la página */
-    
+    margin: -60px auto; /* centra el video en la página */
+    display: flex;
+    align-items: center;
 }
+
+
 h1{
-text-align: center;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 30px;
 }
