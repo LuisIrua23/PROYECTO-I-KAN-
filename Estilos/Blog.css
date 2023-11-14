@@ -8,7 +8,7 @@
 
 body {
     background-image: url(/img/Recurso\ 1.png);
-    background-color: rgb(57, 69, 69);
+    background-color: rgb(76, 111, 111);
 }
 
 .header {
@@ -187,4 +187,100 @@ h1{
     text-align: center;
     margin-top: 120px;
     font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.ocasiones{
+	width: 1280px;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    
+}
+.ocasiones .box{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: rgb(214, 82, 82);
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+}
+.ocasiones .box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+.ocasiones .box .imgBox img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: center top;
+	transition: 2s;
+	transform: scale(1.2);
+}
+.ocasiones .box:hover .imgBox img{
+	transform: scale(1);
+}
+.ocasiones .box .details{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: 1s;
+	opacity: 0;
+	filter: blur(10px);
+	transform: scale(1.5);
+    backdrop-filter: blur(10px);
+}
+.ocasiones .box:hover .details{
+	opacity: 1;
+	filter: blur(0px);
+	transform: scale(1);
+}
+.ocasiones .box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+}
+.ocasiones .box .details .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: #262626;
+}
+.ocasiones .box .details .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	line-height: 24px;
+	color: #262626;
+}
+@media screen and (max-width: 1266px) {
+	.ocasiones {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.ocasiones .box {
+		display: block;
+	}
 }
