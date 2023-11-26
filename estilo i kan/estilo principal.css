@@ -1,176 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
 
-html{
-    font-family:  sans-serif;
+html {
+    font-family: sans-serif;
 }
-body{
+
+body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     /* background:rgb(19, 7, 30);*/
     /* background:rgb(0, 59, 82);*/
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     background: url(/img/calle-coche-luces-frenado.jpg);
     background-attachment: fixed;
-    
     background-size: cover;
     background-position: center;
-    
-    
-
-
-
-
-
-
-    
 }
-.logo img{
+
+.logo img {
     position: fixed;
     height: 100px;
 }
+
 /* =================================   barra de menu ================================*/
-.lineanegra{
-    
+.lineanegra {
     width: 100%;
     height: 60px;
     margin-bottom: 17px;
 }
 
-header{
-    z-index: 3;      /* menu en primera plana*/
-    position: fixed; /*menu en posicion fija*/
-    width: 100%;     /*  en esta parte pone la barra de menu primera plana en header*/
+header {
+    z-index: 3;
+    /* menu en primera plana*/
+    position: fixed;
+    /*menu en posicion fija*/
+    width: 100%;
+    /*  en esta parte pone la barra de menu primera plana en header*/
 }
 
 header .container .nav {
-    
-    
     margin-top: 0px;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
-    
-    background: linear-gradient(rgb(3, 18, 41),rgba(3, 18, 41, 0.692));
+
+    background: linear-gradient(rgb(3, 18, 41), rgba(3, 18, 41, 0.692));
     backdrop-filter: blur(5px);
 }
 
 
-header .container .nav ul li img{               /* logo en la barra de menu*/
-    
+header .container .nav ul li img {
+    /* logo en la barra de menu*/
+
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 0px;
-    height: 60px ;              /*tamaño logo barra de menu*/
-    margin: 0% ;
+    height: 60px;
+    /*tamaño logo barra de menu*/
+    margin: 0%;
     background-color: rgba(255, 255, 255, 0);
     border-radius: 40%;
 }
 
 
-.nav a{
-    margin-left: 10px;               /*espacio entre cada hipervinculo*/
-    margin-right: 10px;                 /*espacio entre cada hipervinculo*/
+.nav a {
+    margin-left: 10px;
+    /*espacio entre cada hipervinculo*/
+    margin-right: 10px;
+    /*espacio entre cada hipervinculo*/
 }
 
-    
-.nav-list2 li a{
-    margin-right: 10px;             /*esta parte para correr "iniciar seesion" a la izquierda*/
+
+.nav-list2 li a {
+    margin-right: 10px;
+    /*esta parte para correr "iniciar seesion" a la izquierda*/
 
 }
-.nav{
+
+.nav {
     /*margin-top:  5px;             margen del menu
     margin-bottom: 3%;
     margin-right: 20%;*/
     height: 0%;
     padding: 0%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     /*align-items:start;*/
-    
+
     background-color: rgba(15, 3, 66, 0.164);
     /*backdrop-filter: blur(70px)  ;*/
 }
 
-input{
+input {
     height: 25px;
     width: 250px;
     border-spacing: 80px;
     border-color: rgba(6, 245, 26, 0.945);
-    border-radius: 40px  ;
+    border-radius: 40px;
 }
 
-.nav-link{
+.nav-link {
     padding: 0px;
-    
     text-decoration: none;
     border-radius: 10px;
-    
 }
 
-header .container .nav ul li{
+header .container .nav ul li {
     font-size: 20px;
     margin: 0%;
     padding: 0px;
-    
-    
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     margin: 0%;
     padding: 0%;
-    align-items: center; /*centrar la lista vertical del menu*/
-
-    
+    align-items: center;
+    /*centrar la lista vertical del menu*/
 }
-.nav-list2{
+
+.nav-list2 {
     list-style: none;
     align-items: center;
     justify-content: end;
     text-align: initial;
     margin: 0%;
     padding: 0%;
-    
-    
-
-
-    
-    
 }
 
 
-ul{
-    
+ul {
     display: flex;
     justify-content: center;
     text-decoration: none;
-
-    margin: 0%;      
-    
+    margin: 0%;
 }
 
-li{
+li {
     padding: 0%;
     text-decoration: none;
-    
-    
-    
-    
+
+
+
+
 }
-a{
+
+a {
     color: rgba(255, 255, 255, 0.692);
     text-decoration: none;
     font-size: 30px;
-    
-    
+
+
 }
-li a:hover{
+
+li a:hover {
     color: rgb(255, 255, 255);
     /*background-color: rgba(15, 3, 66, 0.055);*/
 }
+
 ul li {
     text-decoration: none;
-    list-style:none;/*quitar punto de la lista*/
+    list-style: none;
+    /*quitar punto de la lista*/
 }
 
 /******************************* imagen pesonaje hombre  *******************************/
@@ -187,36 +177,38 @@ ul li {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-     /*posision de las imagenes*/
+    /*posision de las imagenes*/
 }
-.letras img{
-    
-    
+
+.letras img {
+
+
     height: 100vh;
     padding-top: 5%;
     padding-bottom: 0%;
 
 }
 
-.letras img{   
-                           /* fondo circulo personaje */
-    
+.letras img {
+    /* fondo circulo personaje */
+
     background-color: rgb(253, 234, 1);
-   /* border-radius: 50% 10px 0px 50%;*/
-   border-radius: 50% ;
-   
+    /* border-radius: 50% 10px 0px 50%;*/
+    border-radius: 50%;
+
 }
 
-.containerletra .letras .img1 h1{  
-    margin: 0%;                  /* letras lado personaje */
+.containerletra .letras .img1 h1 {
+    margin: 0%;
+    /* letras lado personaje */
     z-index: 2;
     position: relative;
-    margin-left: 30%; 
+    margin-left: 30%;
     font-size: 180PX;
-    
-    
+
+
     color: rgb(99, 121, 134);
     justify-content: center;
     align-items: center;
@@ -224,54 +216,74 @@ ul li {
 }
 
 
-/*******************************slider****************/ 
-.acomodar-slider{
+/*******************************slider****************/
+.acomodar-slider {
     display: flex;
-    position:relative;
-    
+    position: relative;
+    background: rgba(255, 255, 255, 0.801);
 
-   
-    
+
+
+
     align-items: center;
     justify-content: center;
-    padding-top: 12%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     /*padding-left: 40%;*/
-    
+
 }
-.container-slider{
-    
-    width: 99%;                 /*tamaño en hancho de slider*/
-    /*height: 100%;*/                /*tamaño en alura de slider*/
+
+.container-slider {
+
+    width: 99%;
+    /*tamaño en hancho de slider*/
+    /*height: 100%;*/
+    /*tamaño en alura de slider*/
     /*padding-top: 80px;*/
     position: relative;
-   
+
 }
 
-.container-slider .slider{
-   /* border-radius: 90px 10px 0px 90px;*/
+.container-slider .sldr {
+    /* border-radius: 90px 10px 0px 90px;*/
 
-    scroll-behavior:  smooth;
-display: flex;
-background: rgba(223, 208, 0, 0);
-
-padding: 0px;
-        
-overflow: hidden;
-width: 100%;                     /* tamaño del recuadro del slider en hancho */
+    scroll-behavior: smooth;
+    display: flex;
 
 
-height: 400px;                      /* tamaño del recuadro del slider en alto */
+    padding: 0px;
+
+    overflow: hidden;
+    width: 100%;
+    /* tamaño del recuadro del slider en hancho */
+
+
+    height: 600px;
+    /* tamaño del recuadro del slider en alto */
 }
 
+.container-slider .sldr a {
 
-.container-slider .slider a img{
-    
+    height: 80%;
+}
+
+.container-slider .sldr a h1 {
+
+    color: rgba(0, 0, 0, 0.521);
+    text-align: center;
+    font-size: 100%;
+}
+
+.container-slider .sldr a img {
+    border-radius: 3%;
+
     height: 100%;
-    
-    margin: 0px;
+    padding: 0%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
-.container-slider .control{
+
+.container-slider .control {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -282,131 +294,134 @@ height: 400px;                      /* tamaño del recuadro del slider en alto *
 
 }
 
-.container-slider .prev{                     /*posicion de botones no mover */
+.container-slider .prev {
+    /*posicion de botones no mover */
     left: 0;
     top: 50%;
-    transform: translate(-10%,-50%);
+    transform: translate(-10%, -50%);
 
 }
-.container-slider .next{
+
+.container-slider .next {
     right: 0;
     top: 50%;
-    transform: translate(10%,-50%);
-    
+    transform: translate(10%, -50%);
+
 }
 
 
-.divfotos{
+.divfotos {
     width: 100%;
-    background-color: #ffffff75;
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0%;
 }
-.divfotos img{
+
+.divfotos img {
     width: 300px;
-    
+
 
 }
-.f{
+
+.f {
 
     margin: 4%;
 }
-.f h1{
-    
-    position:absolute;
-    
+
+.f h1 {
+
+    position: absolute;
+
 }
+
 /* ======================================================tarjeta entrepaginas*/
 
-.centrartarjetas{
+.centrartarjetas {
     display: flex;
     justify-content: center;
     align-content: center;
-    
+
 }
 
-.containertarjeta{
+.containertarjeta {
     width: 100%;
     display: flex;
     /*max-width: 1100px;*/
-    
+
 }
-.tarjeta{
+
+.tarjeta {
     width: 100%;
-    margin:4%;
+    margin: 5%;
     border-radius: 6px;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.871), green, blue;
     cursor: default;
     transition: all 400ms ease;
-    
+
 }
-.tarjeta:hover{
+
+.tarjeta:hover {
     box-shadow: 5px 5px 20px;
     transform: translateY(-10px);
 }
-.tarjeta img{
+
+.tarjeta img {
     width: 100%;
-    height: 200PX;
-    
 }
-.tarjeta .contenido{
+
+.tarjeta .contenido {
     padding: 15px;
     text-align: center;
-
 }
-.tarjeta .contenido p{
+
+.tarjeta .contenido p {
     line-height: 1.5;
     color: rgba(250, 235, 215, 0.664);
 }
-.tarjeta .contenido h3{
+
+.tarjeta .contenido h3 {
     font-weight: 40000;
     margin-bottom: 15px;
 }
-.tarjeta .contenido a{
+
+.tarjeta .contenido a {
     text-decoration: none;
-    display:  inline-block;
+    display: inline-block;
     padding: 10px;
     margin-top: 10px;
     color: 1px solid rgb(75, 75, 156);
     border-radius: 4px;
     transition: all 400 ease;
-
-    
 }
-.tarjeta .contenido a:hover{
+
+.tarjeta .contenido a:hover {
     background-color: rgb(0, 0, 0);
 }
 
-.entrepaginas{
-    
+.entrepaginas {
     margin-top: 150px;
     margin-bottom: 150px;
     width: 100%;
     justify-content: center;
     align-items: center;
-
-    
     background-color: rgba(255, 255, 255, 0);
-    
-    
-    
     /*width: 100%;
     height: 30vh;
     margin-top: 5%;
     margin-bottom: 5%;*/
-    
 }
-.entrepaginas h1{
+
+.entrepaginas h1 {
     font-size: 80px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: #000000b7;
 }
 
@@ -416,24 +431,28 @@ height: 400px;                      /* tamaño del recuadro del slider en alto *
 
 /* ================    imagen trabsparente hombre izquierda mujer derecha fondo blanco ==============================*/
 
-.pfila{
+.pfila {
 
     padding-top: 20px;
     padding-bottom: 70px;
 }
-.dos{
-    
+
+.dos {
+
     margin-top: 30%;
     display: flex;
     padding: 0;
     margin: 0%;
-    position: relative;  /*posision de las imagenes*/
+    position: relative;
+    /*posision de las imagenes*/
 }
-.dos img{
-    
+
+.dos img {
+
     justify-content: center;
 
-    width: 100%;                   /*division de la imagen de fondo*/
+    width: 100%;
+    /*division de la imagen de fondo*/
     height: 100%;
 }
 
@@ -441,43 +460,47 @@ height: 400px;                      /* tamaño del recuadro del slider en alto *
 
 
 
-.dos .dos1{
-    
+.dos .dos1 {
+
     display: flex;
-    
+
     background-color: rgb(99, 121, 134);
     border-radius: 0px 50% 50% 0px;
     padding-left: 0%;
 
-}   
-.dos .dos1 h1{
+}
+
+.dos .dos1 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 80px;
     color: #fff;
 }
-.dos .dos2{
-    
+
+.dos .dos2 {
+
     display: flex;
     background-color: rgb(99, 121, 134);
     border-radius: 50% 0px 0px 50%;
     padding-right: 0%;
     margin-left: 20%;
-    
+
 
 }
-.dos .dos2 h1{
+
+.dos .dos2 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 80px;
 
 
 }
-section{
+
+section {
     margin: 0%;
     padding: 0%;
     position: absolute;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 
@@ -486,33 +509,35 @@ section{
 
 
 /*-----------------------------------------------nuevo slider------------------*/
-.slider{
-    
+.slider {
+
     width: 100%;
     /*height: 600px;*/
     overflow: hidden;
     height: 100%;
-    
+
 }
 
-figure{
+figure {
     margin: 0%;
     padding: 0%;
     position: relative;
     left: 0;
-    width: 400%; /* width dikali slide */
+    width: 400%;
+    /* width dikali slide */
     animation: 10s slide linear infinite;
-    
+
 }
 
-.slide{
+.slide {
     position: relative;
-    width: 25%; /* width dibagi slide */
-    
+    width: 25%;
+    /* width dibagi slide */
+
     float: left;
 }
 
-.slide h1{
+.slide h1 {
     position: absolute;
     font-size: 3em;
     width: 100%;
@@ -522,56 +547,69 @@ figure{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.slide img{
+.slide img {
     width: 100%;
     /*height: 580px;*/
     height: 100%;
 }
 
-@keyframes slide{
-    0%{
-        left:0;
+@keyframes slide {
+    0% {
+        left: 0;
     }
-    10%{
-        left:0;
+
+    10% {
+        left: 0;
     }
-    20%{
-        left:-100%;
+
+    20% {
+        left: -100%;
     }
-    30%{
-        left:-100%;
+
+    30% {
+        left: -100%;
     }
-    40%{
-        left:-200%;
+
+    40% {
+        left: -200%;
     }
-    50%{
-        left:-200%;
+
+    50% {
+        left: -200%;
     }
-    55%{
-        left:-300%;
+
+    55% {
+        left: -300%;
     }
-    65%{
-        left:-300%;
+
+    65% {
+        left: -300%;
     }
-    66%{
-        left:-200%;
+
+    66% {
+        left: -200%;
     }
-    74%{
-        left:-200%;
+
+    74% {
+        left: -200%;
     }
-    75%{
-        left:-100%;
+
+    75% {
+        left: -100%;
     }
-    85%{
-        left:-100%;
+
+    85% {
+        left: -100%;
     }
-    90%{
-        left:0;
+
+    90% {
+        left: 0;
     }
-    1000%{
-        left:0;
+
+    1000% {
+        left: 0;
     }
-} 
+}
 
 
 
@@ -604,13 +642,13 @@ figure{
 }*/
 
 footer {
-    
+
     position: relative;
 
     width: 100%;
     height: 20vh;
     justify-content: center;
-    
+
     background-color: rgb(0, 0, 0);
     backdrop-filter: blur(70px);
     color: #fff;
@@ -646,11 +684,12 @@ footer {
     font-size: 25px;
     color: #ffffff;
     /*padding: 0rem 1rem;     /* espacios entre iconos de redes sociales */
-    padding: 0px 10px 0px 10px ;
-    
+    padding: 0px 10px 0px 10px;
+
 }
 
-.social-icons i:hover, .social-icons i:focus {
+.social-icons i:hover,
+.social-icons i:focus {
     color: rgb(202, 186, 0);
 }
 
@@ -668,6 +707,7 @@ footer {
     padding: 1rem;
     border-radius: .4rem;
 }
+
 .news-btn {
     background: transparent;
     border: none;
@@ -713,7 +753,7 @@ footer {
         transform: initial;
         transition: initial;
     }
-    
+
 
     .nav-item {
         margin: 0 2.4rem;
@@ -730,6 +770,7 @@ footer {
     .active {
         position: relative;
     }
+
     .active::before {
         content: '';
         position: absolute;
@@ -747,6 +788,7 @@ footer {
     .fil {
         font-size: 3rem;
     }
+
     .head {
         font-size: 4.7rem;
         letter-spacing: .8rem;
@@ -757,7 +799,7 @@ footer {
         align-items: center;
     }
 
-    .res-info > div {
+    .res-info>div {
         flex: 1;
     }
 
@@ -772,9 +814,9 @@ footer {
 
     .footer-content-about {
         max-width: 51.3rem;
-        margin:  0 auto 5.4rem;
+        margin: 0 auto 5.4rem;
     }
-    
+
 
     /* en esata parte se correa a un lado.footer-div{
         display: flex;
@@ -791,5 +833,5 @@ footer {
    .news-btn {
        margin-left: 7.5rem;
    }*/
-    
+
 }
