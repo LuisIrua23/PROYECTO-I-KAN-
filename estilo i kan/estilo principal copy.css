@@ -217,23 +217,6 @@ ul li {
 
 
 /*******************************slider****************/
-.bella{
-    width: 1500px;
-    height: 600px;
-    background-image: url(/img/prueba\ mujernegro.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100% 100% 100%;
-}
-.el{
-    width: 1500px;
-    height: 600px;
-    background-image: url(/img/copia.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100% 100% 100%;
-}
-
 .acomodar-slider {
     display: flex;
     position: relative;
@@ -315,14 +298,14 @@ ul li {
     /*posicion de botones no mover */
     left: 0;
     top: 50%;
-    transform: translate(-0%, -50%);
+    transform: translate(-10%, -50%);
 
 }
 
 .container-slider .next {
     right: 0;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(10%, -50%);
 
 }
 

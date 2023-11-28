@@ -4,15 +4,8 @@ const next =document.querySelector('.next')
 const slider =document.querySelector('.sldr')
 
 prev.addEventListener('click',() => {
-    slider.scrollLeft -=692
+    slider.scrollLeft -=2200
 })
 next.addEventListener('click',() => {
-    slider.scrollLeft +=692
+    slider.scrollLeft +=2200
 })
-
-// prev.addEventListener('click',() => {
-//     slider.scrollLeft -=692
-// })
-// next.addEventListener('click',() => {
-//     slider.scrollLeft +=692
-// })
