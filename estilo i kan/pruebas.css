@@ -208,7 +208,7 @@ ul li {
 
 /*.hero2 {
     width: 100%;
-     height: 120vh;
+    height: 120vh;
     background-color: black;
     
     background-size: cover;
@@ -219,17 +219,17 @@ ul li {
     background: url("/img/prueba\ mujer.jpg") center no-repeat;
 }*/
 
- .containerhero1{
+.containerhero1{  /* */
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
+    margin-left: 141px;
     
     
 }
 .containerhero2{
     justify-content: center;
     align-items: center;
-    margin-left: 850px; 
+    margin-left: 799px; 
     
 } 
 
